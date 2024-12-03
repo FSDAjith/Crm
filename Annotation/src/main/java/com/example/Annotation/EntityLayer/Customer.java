@@ -22,6 +22,7 @@ public class Customer {
 	private int age;
 	private String mobile;
 	private String email;
+	private String location;
 	
 	@OneToMany(cascade = CascadeType.ALL)//mention here to i am not create the column
 	@JoinColumn(name="cutomer_id_fk",referencedColumnName = "id")
